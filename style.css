@@ -54,7 +54,7 @@ body
 }
 
 .mainContent p {
-    margin: 0px 50px;
+    margin: 0px 20px;
 }
 
 .mainContent h1,h2 {
@@ -70,6 +70,10 @@ body
     background-color: gray;
     color: white;
     padding: 20px;
+}
+.content-image {
+    object-fit: contain;
+    padding: 10px;
 }
 
 @media screen and (max-width: 600px) {
