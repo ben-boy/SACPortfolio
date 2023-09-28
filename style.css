@@ -41,10 +41,14 @@ body
     background-color: blue;
     
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 20px;
+}
+#index-hero {
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*i6-meSebuXgW7tlt);
+    background-size: cover;
 }
 #paper1-hero {
     background-color: red;
@@ -64,12 +68,13 @@ body
 .content-light {
     background-color: white;  
     padding: 10px;
-    margin:20px;
+    margin:50px 0px;
 }
 .content-dark {
     background-color: gray;
     color: white;
     padding: 20px;
+    margin: 50px 0px;
 }
 .content-image {
     object-fit: contain;
@@ -77,9 +82,22 @@ body
 }
 
 @media screen and (max-width: 600px) {
+    .hero-container {
+        font-size: 16px;
+        height: 25rem
+    }
     .flex {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }   
+    #nav {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .mainContent {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
