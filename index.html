@@ -2,27 +2,45 @@
 
 <html>
     <head>
-        <script src="https://kit.fontawesome.com/fbe8d25b02.js" crossorigin="anonymous"></script>
+        <title>SAC Computer Science</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav class="flex" id="nav">
-            <div id="logo-container">
-                <a href="index.html">
-                    <i id="logo" class="fa-solid fa-code"></i>
-                    <b>Portfolio</b>
-                </a>
-            </div>
-            <span></span>
-            <a>Paper 1</a>
-            <a>Paper 2</a>
-            <a>NEA</a>
-        </nav>
+        <nav id="nav-placeholder"></nav>
         <div class="flex hero-container">
             <h1 style="color:white;text-align: center;">
                 Welcome to the Computer Science <br>
                 A Level website
             </h1>
         </div>
+
+        <div class="mainContent">
+            <div class="content-light">
+                <h2>Good heading, great heading</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam repudiandae nostrum voluptas, eaque quibusdam soluta earum explicabo ut rerum, possimus, cupiditate quos repellendus qui fugiat! Porro atque quam nam aspernatur.
+                </p>
+            </div>
+            <div class="content-dark">
+                <h2>Good heading, great heading</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam repudiandae nostrum voluptas, eaque quibusdam soluta earum explicabo ut rerum, possimus, cupiditate quos repellendus qui fugiat! Porro atque quam nam aspernatur.
+                </p>
+            </div>
+            <div class="content-light">
+                <h2>Good heading, great heading</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam repudiandae nostrum voluptas, eaque quibusdam soluta earum explicabo ut rerum, possimus, cupiditate quos repellendus qui fugiat! Porro atque quam nam aspernatur.
+                </p>
+            </div>
+        </div>
     </body>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+    <script src="https://kit.fontawesome.com/fbe8d25b02.js" crossorigin="anonymous"></script>
 </html>
