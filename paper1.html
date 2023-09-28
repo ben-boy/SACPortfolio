@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/fbe8d25b02.js" crossorigin="anonymous"></script>
+        <link href="../style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav id="nav-placeholder"></nav>
+        <div class="flex hero-container" id="paper1-hero">
+            <h1 style="color:white;text-align: center;">
+                Paper 1
+            </h1>
+        </div>
+    </body>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+</html>
