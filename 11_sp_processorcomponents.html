@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SAC Computer Science</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav id="nav-placeholder"></nav>
+        <div class="mainContent">
+            <div class="content-light">
+                <h1>Processor Components</h1>
+                <span class="flex center">
+                    <img 
+                        src="https://teach-ict.com/2016/images/diagrams/registers_in_cpu_as_level.jpg"
+                    />
+                    <div>
+                        <h3>MAR (Memory Address Register)</h3>
+                        <p>Stores the address of the instruction or data to be fetched</p>
+                    </div>
+                    <div>
+                        <h3>MDR (Memory Data Register)</h3>
+                        <p>Stores data read from or being written to the RAM</p>
+                    </div>
+                    <div>
+                        <h3>PC (Program Counter)</h3>
+                        <p>Stores the address of the next instruction to be fetched</p>
+                    </div>
+                    <div>
+                        <h3>CIR (Current Instruction Register)</h3>
+                        <p>Stores the instruction currently being executed</p>
+                    </div>
+                    <div>
+                        <h3>ACC (Accumulator)</h3>
+                        <p>Stores the result of calculations from the ALU</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <footer class="flex">
+            <img src="assets/ambroselogo.jfif" alt="Ambrose logo"/>
+            <h3>Made by Ben Martin</h3>
+        </footer>
+    </body>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("navigation.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+    <script src="https://kit.fontawesome.com/fbe8d25b02.js" crossorigin="anonymous"></script>
+</html>

@@ -11,6 +11,13 @@ body
 .flex {
     display: flex;
 }
+.column {
+    flex-direction: column;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
 
 .nowrap {
     flex-wrap: nowrap !important;
@@ -70,7 +77,7 @@ body
     margin: 0px 20px;
 }
 
-.mainContent h1,h2 {
+.mainContent h1,h2,h3 {
     text-align: center;
 }
 
