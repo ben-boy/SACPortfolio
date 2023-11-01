@@ -8,9 +8,58 @@
     </head>
     <body>
         <nav id="nav-placeholder"></nav>
-        <div class="content-light">
-            <h2>Fetch Decode Execute</h2>
+        <div class="content-light flex center column">
+            <h1>Fetch Decode Execute</h1>
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBC4Rg-1R_Zp9ald6X8ZBkk6FLHiLpWEGVK9B-xnXfbTUU7gYMdmLNVYIHb1o0_OXyzv8:www.lakelandscomputing.com/images/The_Fetch-Execute_Cycle.png&usqp=CAU"
+            />
         </div>
+        <div class="content-light">
+            <h2>Fetch</h2>
+            <span>
+                <ul>
+                    <li>
+                        The PC transfers the address of the instruction or data to be fetched
+                        into the MAR
+                    </li>
+                    <li>
+                        The MAR places the address onto the data bus
+                    </li>
+                    <li>
+                        A read trigger is sent across the control bus that causes main memory 
+                        to load the content of the location onto the data bus
+                    </li>
+                    <li>
+                        The instruction is passed into the MDR
+                    </li>
+                    <li>
+                        The instruction is copied from the MDR to the CIR
+                    </li>
+                </ul>
+            </span>
+        </div>   
+        <div class="content-dark">
+            <h2>Decode</h2>
+            <span>
+                <ul>
+                    <li>
+                        The CPU examines the instruction in the CIR and translates it in the control unit
+                    </li>
+                </ul>
+            </span>
+        </div>   
+        <div class="content-light">
+            <h2>Execute</h2>
+            <span>
+                <ul>
+                    <li>
+                        The instruction within the CIR is executed by the CPU,
+                        e.g. adding two numbers, loading a number from memory to the Accumulator,
+                        or storing the contents of the Accumulator into memory
+                    </li>
+                </ul>
+            </span>
+        </div>   
         <footer class="flex">
             <img src="assets/ambroselogo.jfif" alt="Ambrose logo"/>
             <h3>Made by Ben Martin</h3>

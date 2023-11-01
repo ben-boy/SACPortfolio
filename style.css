@@ -80,6 +80,10 @@ body
 .mainContent h1,h2,h3 {
     text-align: center;
 }
+img {
+    width: 25rem;
+    height: 25rem;
+}
 
 .content-light {
     background-color: white;  
