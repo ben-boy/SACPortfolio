@@ -67,10 +67,12 @@ body
     background-size: cover;
 }
 #paper1-hero {
-    background-color: red;
+    background-image: url("assets/paper1.jpeg");
+    background-size: cover;
 }
 #paper2-hero {
-    background-color:coral;
+    background-image: url("assets/paper2.jpeg");
+    background-size: cover;
 }
 
 .mainContent p {
@@ -96,6 +98,31 @@ img {
     padding: 20px;
     margin: 50px 0px;
 }
+
+.contents-list {
+    text-align: center;
+}
+
+.contents-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30rem;
+    height: 2rem;
+
+    margin: 10px;
+    background-color: lightgray;
+    border-radius: 10px 10px;
+
+}
+
+.contents-list a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .content-image {
     object-fit: contain;
     padding: 10px;
